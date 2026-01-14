@@ -17,15 +17,15 @@
         <img src="images/logo.svg" alt="logo portfolio">
         <nav class="navigation">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link active">Главная</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Проекты</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Обо мне</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Связаться</a></li>
+                <li class="nav-item"><a href="#main" class="nav-link active">Главная</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Проекты</a></li>
+                <li class="nav-item"><a href="#developer" class="nav-link">Обо мне</a></li>
+                <li class="nav-item"><a href="#feedback" class="nav-link">Связаться</a></li>
             </ul>
         </nav>
     </div>
 
-    <header class="header container">
+    <header class="header container" id="main">
         <img src="/images/avatar.png" alt="Sashka Verwee" class="header-photo">
 
         </img>
@@ -41,20 +41,17 @@
                             class="social-link"><img src="images/icons/linkedin.svg" alt="linkedin"
                                 class="social-logo"></a>
                     </li>
-                    <li class="social-item"><a href="" class="social-link"><img src="images/icons/twitter.svg"
-                                alt="twitter" class="social-logo"></a>
+                    <li class="social-item"><a href="https://t.me/aaavavv" class="social-link"><img
+                                src="images/icons/telegram.svg" alt="telegram" class="social-logo"></a>
                     </li>
                     <li class="social-item"><a href="https://github.com/kitty-killer" class="social-link"><img
                                 src="images/icons/github.svg" alt="github" class="social-logo"></a>
                     </li>
-                    <li class="social-item"><a href="" class="social-link"><img src="images/icons/stackoverflow.svg"
-                                alt="stackoverflow" class="social-logo"></a>
-                    </li>
-                    <li class="social-item"><a href="" class="social-link"><img src="images/icons/youtube.svg"
-                                alt="youtube" class="social-logo"></a>
+                    <li class="social-item"><a href="mailto:alexverh14@gmail.com" class="social-link"><img
+                                src="images/icons/gmail.svg" alt="gmail" class="social-logo"></a>
                     </li>
                 </ul>
-                <a href="#" class="cv-download" download>
+                <a href="cv.pdf" class="cv-download" download>
                     <img src="images/icons/download.svg" alt="download-icon" class="cv-icon">
                     <span class="cv-text">Скачать резюме</span>
                 </a>
@@ -62,7 +59,7 @@
         </div>
     </header>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="section-heading">Последние проекты</h2>
             <div class="cards">
@@ -82,12 +79,18 @@
                             администратора
                             на Firebase.</p>
                         <div class="card-buttons">
-                            <a href="#" class="card-button"><img src="images/icons/code.svg" alt="code icon"
-                                    class="card-button-icon"><span class="card-button-text">Код</span>
+                            <a href="https://github.com/kitty-killer/youMeal-router-" class="card-button"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="images/icons/code.svg" alt="code icon" class="card-button-icon">
+                                <span class="card-button-text">Код</span>
                             </a>
-                            <a href="#" class="card-button"><img src="images/icons/demo.svg" alt="demo icon"
-                                    class="card-button-icon"><span class="card-button-text">Демо</span>
+
+                            <a href="https://youmeal-ac6d1.web.app/" class="card-button" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="images/icons/demo.svg" alt="demo icon" class="card-button-icon">
+                                <span class="card-button-text">Демо</span>
                             </a>
+
 
                         </div>
                     </div>
@@ -120,7 +123,7 @@
 
         </div>
     </section>
-    <section class="developer container">
+    <section class="developer container" id="developer">
         <img src="images/photo-developer.jpg" alt="Sashka Verwee" class="developer-photo">
         <div class="developer-about">
             <span class="developer-hello">Рада вас видеть</span>
@@ -136,7 +139,7 @@
 
     </section>
 
-    <section class="skills container">
+    <section class="skills container" id="skills">
         <h2 class="skills-tittle">Работаю с разными языками и инструментами</h2>
         <ul class="tags">
             <li class="tags-item"><a href="#" class="tag">React</a></li>
@@ -149,32 +152,37 @@
         </ul>
     </section>
 
-    <section class="feedback form-container">
-        <h2 class="feedback-tittle">Готова обсудить проект...</h2>
-        <form action="#" class="form">
-            <div class="input-group">
-                <label for="userName" class="input-label">Имя</label>
-                <input id="userName" type="text" class="input">
-            </div>
+    <section class="feedback " id="feedback">
+        <img src="images/hand.png" alt="hand" class="feedback-hand">
+        <div class="form-container">
 
-            <div class="input-group">
-                <label for="userEmail" class="input-label">Email</label>
-                <input id="userEmail" type="text" class="input">
-            </div>
 
-            <div class="input-group">
-                <label for="userMassage" class="input-label">Сообщение</label>
-                <textarea id="userMassage" cols="30" rows="30" class="input textarea"></textarea>
-            </div>
 
-            <div class="button-group">
-                <button type="submit" class="submit-button">
-                    <img src="images/icons/send.svg" alt="send-icon" class="cv-icon">
-                    <span class="cv-text">Отправить</span>
-                </button>
-            </div>
-        </form>
+            <h2 class="feedback-tittle">Готова обсудить проект...</h2>
+            <form action="#" class="form">
+                <div class="input-group">
+                    <label for="userName" class="input-label">Имя</label>
+                    <input id="userName" type="text" class="input">
+                </div>
 
+                <div class="input-group">
+                    <label for="userEmail" class="input-label">Email</label>
+                    <input id="userEmail" type="text" class="input">
+                </div>
+
+                <div class="input-group">
+                    <label for="userMassage" class="input-label">Сообщение</label>
+                    <textarea id="userMassage" cols="30" rows="30" class="input textarea"></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="submit-button">
+                        <img src="images/icons/send.svg" alt="send-icon" class="cv-icon">
+                        <span class="cv-text">Отправить</span>
+                    </button>
+                </div>
+            </form>
+        </div>
     </section>
 
 </body>
